@@ -1,7 +1,7 @@
 # Lists
- These two my implementations of a linked list
+ These are two my implementations of a linked list
  The first one is based on pointers.
- THe second one is based on an array, which allows to add new elements and to delete in O(1) in some cases.
+ The second one is based on an array, which allows to add new elements and to delete in O(1) in some cases.
 
 # How to use
  To compile it, enter in the terminal
