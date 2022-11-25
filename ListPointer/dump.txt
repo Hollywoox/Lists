@@ -1,0 +1,24 @@
+digraph List {
+	rankdir = LR;
+	node[color = "red", fontsize = 14, style = "rounded", style = "filled", fillcolor = "lightgreen"];
+	edge[color = "darkgreen"];
+	info [shape = record, fillcolor = "lightblue", label = " list[0x16bcf7370] | name: list1 | at main.cpp | at main(6) "];
+	0 [shape=record,label=" <1> fictive elem(0) | <2> data = POISON" ];
+	1 [shape=record,label=" <1> 1 | <2> data = 3243432"];
+	0: <1> -> 1;
+	1: <2> -> 0;
+	2 [shape=record,label=" <1> 2 | <2> data = 3434"];
+	1: <1> -> 2;
+	2: <2> -> 1;
+	3 [shape=record,label=" <1> 3 | <2> data = 102"];
+	2: <1> -> 3;
+	3: <2> -> 2;
+	4 [shape=record,label=" <1> 4 | <2> data = 56"];
+	3: <1> -> 4;
+	4: <2> -> 3;
+	5 [shape=record,label=" <1> 5 | <2> data = 30"];
+	4: <1> -> 5;
+	5: <2> -> 4;
+	5: <1> -> 0;
+	0: <2> -> 5;
+}
